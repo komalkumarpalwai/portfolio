@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+overflow: hidden;
+overflow-y: auto;
+background-color: rgb(0, 0, 0);
+color: #fff;
+}
+.page1
+{
+background-color: rgb(0, 0, 0);
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+color: white;
+height: 100vh;
+font-size: 2vw;
+overflow: hidden;
+}
+
+.span1
+{
+    margin-left: 60%;
+   
+}
+.h1
+{
+    margin-left: 20%;
+}
+.lodinglogo
+{
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(45deg);
+    height: 10vh;
+    animation: rotateAnimation 2s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: translateX(0) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100px)  rotate(45deg); 
+    }
+}
+.name
+{
+    font-weight: 700;
+    font-family: cursive;
+    color: orangered;
+}
+.nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+ display: flex;
+ position:fixed;
+ z-index: 99;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo
+{
+    width: 30%;
+   
+}
+.logo h2
+{
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: cursive;
+    margin-left: 20%;
+    cursor: pointer;
+    margin-top: 0%;
+    text-shadow: 0 0 10px  orangered, 0 0 20px orangered, 0 0 30px  orangered;
+}
+.navicons
+{
+ 
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ul li ,ul  li a{
+    list-style: none;
+    text-decoration: none;
+  
+}
+.navicons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.navicons li {
+    display: inline-block;
+    margin-right: 10px;
+    justify-content: space-between;
+    
+    gap: 200%;
+   
+}
+
+.navicons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transform: 0.2s ease-in;
+    font-size: 1.5vw;
+  transition: 0.2s;
+}
+.active
+{
+    color:  #ff4500;
+    border-bottom: 1px solid white;
+}
+.navicons a:hover
+{
+    color:  #ff4500;
+    
+}
+.intro
+{
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+   
+}
+
+.box
+{
+    height: 100vh;
+    width: 100vw;
+   display: flex;
+   padding-top: 10%;
+   background-image: url("back.jpg");
+background-repeat: no-repeat;
+background-position: 40%;
+background-size: contain;
+}
+
+.text2{
+    color: rgb(255, 255, 255);
+  
+    position: relative;
+    text-align: center;
+    margin-left: 8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text2 h1
+{
+    font-family:monospace;
+    font-weight: 400;
+    font-size: 8vw;
+    opacity: 1;
+}
+.text h2
+{
+    font-family:cursive;
+    font-weight: 800;
+    font-size: 5vw;
+    opacity: 0;
+  
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.mySpan {
+    font-size: 2em;
+    margin: 0 10px;
+    opacity: 0;
+}
+.abitme{
+    height: 50vh;
+    width: 40vw;
+    
+    position: absolute;
+  right: 15px;
+  top: 380px;
+  opacity: 0;
+}
+
+.abitme h3
+{
+    font-family:monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.abitme p
+{
+    margin-top: 2%;
+    line-height: -3%;
+    font-size: 1.6vw;
+    font-weight: 300;
+    color: #ffffff1f;
+}
+.abitme button
+{
+    height: 7vh;
+    width: 9vw;
+    border-radius: 100px;
+    border: none;
+    margin-top: 2%;
+    font-weight: 800;
+   cursor: pointer;
+    font-size: 1.3vw;
+}
+.LinkedIn
+{
+    background-color: #0077B5;
+    color: white;
+}
+.Github
+{
+    background-color: #171515;
+    color: white;
+
+}
+.aboutme
+{
+    opacity: 0;
+}
+.nextpage
+{
+    height: 10vh;
+    width: 100vw;
+    background-color: #000000;
+    display: none;
+}
+.nextpage h1
+{
+    text-align: center;
+    margin-left: 45%;
+    font-size: 3vw;
+  color:rgb(255, 255, 255);
+ text-decoration:dotted;
+    font-family: monospace;
+    font-weight: 900;
+}
+.skills
+{
+    height: 90vh;
+    width: 90vw;
+    
+    margin: 0% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    grid-gap: 4% ;
+    
+}
+.card
+{
+   height:40vh;
+   width: 40vw;
+   margin: 2% 2%;
+ border: 0px solid white;
+ box-shadow: 1px 1px 10px  rgb(255, 255, 255);
+    display: flex;
+    border-radius: 1%;
+}
+.card2
+{
+    margin-top: -5%;
+}
+.photo 
+{
+    height:40vh;
+   width: 20vw;
+  
+}
+.photo img
+{
+    height:35vh;
+   width: 17vw;
+   margin: 4% 4%;
+   border-radius: 50%;
+   opacity: 0.8;
+  
+}
+.name
+{
+    height:40vh;
+   width: 20vw;
+   background-color: #000000;
+   color: white;
+   text-align: center;
+   
+}
+
+.bar {
+    height: 30vh;
+    width: 5vw;
+    border: 1px solid white;
+    background-color: #7f8c8d; 
+    margin: 2% 40%;
+    position: relative;
+}
+
+.bars
+{
+    height: 3vh;
+    width: 4.8vw;  
+margin-left: 1%;
+  margin-top: 10%;
+ color: #000000;
+    background-color: #ffffff;
+}
+.cssbars
+{
+    height: 2.5vh;
+    width: 4.8vw;
+    font-size: 1vw;
+    margin-top: 15%;
+}
+.skills
+{
+    display: none;
+}
+.heading
+{
+    background-color: #ffffff;
+}
+.heading h2
+{
+    text-align: center;
+    font-size: 3vw;
+    font-family: monospace;
+    font-weight: 900;
+    text-shadow: 0 0 10px  orangered, 0 0 20px orangered, 0 0 30px  orangered;
+    
+}
+.heading p
+{
+    color:rgb(0, 0, 0);
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    background-color: white;
+}
+.heading
+{
+    display: none;
+}
+.projects
+{
+    display: none;
+}
+.downloadcv
+{
+    height: 20vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.downloadcv .cv{
+    height: 10vh;
+    width: 15vw;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 1.4vw;
+    text-decoration: solid;
+    cursor: pointer;
+}
+.downloadcv .cv:hover
+{
+    animation: cv 1s infinite ease-in-out;
+}
+@keyframes cv {
+    0%{
+        text-shadow:  0 0 10px  orangered, 0 0 20px orangered, 0 0 30px  orangered; 
+      border: none;
+    }
+    30%{
+        border: none;
+        text-shadow:  0 0 10px  rgb(207, 127, 97), 0 0 20px rgb(207, 53, 187), 0 0 30px  rgb(214, 233, 42); 
+    }
+    60%{
+        border: none;
+        text-shadow:  0 0 10px  rgb(27, 201, 35), 0 0 20px rgb(15, 216, 49), 0 0 30px  rgb(3, 209, 55); 
+    }
+    90%{
+        border: none;
+        text-shadow:  0 0 10px  rgb(128, 202, 231), 0 0 20px rgb(20, 201, 224), 0 0 30px  rgb(58, 200, 219); 
+    }
+    100%{
+        border: none;
+        text-shadow:  0 0 10px  rgb(128, 231, 167), 0 0 20px rgb(20, 201, 224), 0 0 30px  rgb(58, 200, 219); 
+    }
+    
+}
+.getintouch
+{
+    display: none;
+}
+.downloadcv
+{
+    display: none;
+}

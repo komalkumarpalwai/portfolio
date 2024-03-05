@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.services
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+   
+}
+.projects
+{
+display: none;
+}
+.serv{
+    height: 40vh;
+    width: 25vw;
+   
+    border: none;
+    margin: 1% 10%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    border-radius: 3%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: monospace;
+}
+.serv:hover
+{
+    
+    animation: anu 1.4s infinite ease;
+}
+@keyframes anu {
+    0%{
+        box-shadow: 1px 1px 10px orangered;
+    }
+    40%{
+        box-shadow: 3px 3px 10px rgb(10, 8, 7);
+    }
+    100%
+    {
+      
+            box-shadow: 5px 5px 10px orangered;
+       
+    }
+    
+}
+.serv .top
+{
+    height:20vh;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.serv .top h1
+{
+    text-align: center;
+    font-weight: 4vw;
+}
+.serv .top img
+{
+    height:15vh;
+    width: 15vw;
+    border-radius: 50%;
+    margin: 5% 23%;
+    border: 4px solid blue;
+}
+.bottom p
+{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 1vw;
+    word-wrap:normal;
+    margin-left: 1%;
+}
+.services
+{
+    display: none;
+}
+.pheading
+{
+    background-color: #ffffff;
+    display: none;
+}
+.pheading h2
+{
+    text-align: center;
+    font-size: 3vw;
+    font-family: monospace;
+    font-weight: 900;
+    text-shadow: 0 0 10px  orangered, 0 0 20px orangered, 0 0 30px  orangered;
+    
+}
+.pheading p
+{
+    color:rgb(0, 0, 0);
+    font-family: cursive;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2vw;
+    background-color: white;
+}
+   
+.projects
+{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+   
+}
+.project{
+    height: 40vh;
+    width: 25vw;
+   
+    border: none;
+    margin: 1% 10%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    border-radius: 3%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    font-family: monospace;
+}
+.project .top
+{
+    height: 25vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.project .top img
+{
+    height: 25vh;
+    width: 25vw;
+}
+.project .bottom  span
+{
+    font-weight: 800;
+    font-family:cursive;
+ 
+}
+.project .bottom 
+{
+    position: relative;
+}
+.bprojects
+{
+    height: 5vh;
+    width: 5vw;
+    border-radius: 100px;
+    border: 1px solid rgb(124, 78, 78);
+    color: black;
+   
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.third
+{
+    bottom: -35px;
+}
+.last
+{
+    bottom: -35px;
+}
+.projects
+{
+    display: none;
+}
+.getintouch
+{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.register
+{
+    background-color: white;
+    height: 90vh;
+    width: 90vw;
+    display: none;
+
+}
+.register:hover
+{
+    animation: register 3s infinite ease-in-out ;
+}
+@keyframes register {
+   
+    
+}
+.register .form
+{
+    background-color: white;
+    height: 90vh;
+    width: 45vw;
+    border-right: 2px solid rgba(0, 0, 0, 0.158);
+    display: none;
+}
+.register .enddetails
+{
+    background-color: rgb(255, 255, 255);
+    height: 90vh;
+    width: 45vw;
+    display: none;
+    
+}
+.register .form
+{
+    display: inline;
+  
+}
+
+h2 {
+    text-align: center;
+    text-shadow:  0 0 10px  orangered, 0 0 20px orangered, 0 0 30px  orangered; 
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.mbutton {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mbutton:hover {
+    background-color: #45a049;
+}
+
+/* Optional: Add styles for success message */
+.success-message {
+    color: #4caf50;
+    font-weight: bold;
+    text-align: center;
+}
+.enddetails p
+{
+  padding-top: 10%;
+  font-size: 1.5vw;
+  padding-left: 10%;
+  color: #333;
+}
+.enddetails span
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2vw;
+    color: #333;
+}
+.enddetails h2
+{
+    text-shadow:  0 0 10px  orangered, 0 0 20px orangered, 0 0 30px  orangered; 
+}
+.getintouch
+{
+    display: none;
+}
+.tankingyou
+{
+    height: 20vh;
+    width: 100vw;
+    background-color: #000000;
+    color: white;
+display: none;
+position: relative;
+}
+.tankingyou p
+{
+    text-align: center;
+    font-size: 1.4vw;
+    font-weight: 600;
+    
+}
+.tankingyou h2
+{
+    margin-top: 3%;
+}
+.tankingyou i
+{
+    position: absolute;
+    right: 0;
+    font-size: 5vw;
+    top: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: orangered;
+}
+.text2
+{
+    display: none;
+}
