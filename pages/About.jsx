@@ -40,9 +40,7 @@ export default function About() {
       </div>
 
       {/* Footer */}
-      <footer className="mt-12 text-gray-500 text-sm">
-        © 2025 Komal Kumar Reddy. All rights reserved.
-      </footer>
+     
     </div>
   );
 }
